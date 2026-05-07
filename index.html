@@ -1,29 +1,82 @@
-<html>
-	<h1>
-		Hey, I'm David
-	</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Davids Amazing Website</title>
+  </head>
+
 	<body>
-		<h2>About me</h2>
-		<p>
-			I write code sometimes and my colleagues call me 'Biffen' because I go to the gym (I lift a lot.)
-		</p>
-		<h2>What I'm working on</h2>
-		<p>
-			I'm learning about self-hosting at the moment and am very excited about it.
-		</p>
-		<h2>Foods I want to try</h2>
-		<p>
-			<li> Surströmming </li>
-			<li> Wagyu beef </li>
-			<li> Caviar (the fine stuff) </li>
-			<li> Fermented shark </li>
-		</p>
-		<h2>Who I love</h2>
-		<p>
-			<li>My bb Nat</li>
-			<li>My mom</li>
-			<li>My dad</li>
-			<li>Puppan pe</li>
-		</p>
+    <div class="navbar">
+      <button id="hometab" class="tablink">Home</button>
+      <button id="newstab" class="tablink">News</button>
+      <button id="contacttab" class="tablink">Contact</button>
+      <div class="dropdown">
+        <img class="chosen-language" src="./assets/icons/gb.svg">
+        <div class="language-menu">
+          <img id="en" class="selectable-language" src="./assets/icons/gb.svg">
+          <img id="es" class="selectable-language" src="./assets/icons/es.svg">
+          <img id="sv" class="selectable-language" src="./assets/icons/se.svg">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="home" class="tabcontent">
+	    <h2 id="greeting">Hey, I'm David</h2>
+		  <p id="aboutme">
+			  I write code sometimes. I go to the gym and lift heavy weights. I play guitar, mostly rock, and I play videogames, typically Elden Ring.
+		  </p>
+		  <h3 id="whatimworkingon">What I'm working on</h3>
+		  <p id="whatimworkingondesc">
+			  I'm learning about self-hosting at the moment and am very excited about it.
+		  </p>
+		  <h3 id="funfactaboutme">Fun fact about me</h3>
+		  <p id="funfactaboutmedesc">
+        I can do 16 pull ups (hell yea)
+		  </p>
+		  <h3 id="whydidimakethiswebsite">Why did I make this website</h3>
+		  <p id="whydidimakethiswebsitedesc">
+        Because web development is easy
+		  </p>
+    </div>
+
+    <div id="news" class="tabcontent">
+      <article class="articlepost">
+        <header class="articleheader">
+          <div>
+            <h2 id="newsheader_260506">My website is here!</h2>
+            <h4>2026-05-06</h4>
+          </div>
+        </header>
+        <footer class="articlefooter">
+          <p id="newsp1_260506">
+            I decided to give some attention to my website. AREN'T YOU EXCITED!?!?!
+          </p>
+          <p id="newsp2_260506">
+            As you can probably guess from the looks of all this, I did not use any AI-tools to create this. There are countless AI-tools that can whip up a website in seconds, and I think that is great! My first reason for doing this, was to increase my knowledge about frontend development without letting an AI do the hard work. My second reason, was that I wanted something fast and reliable, that is a 100% me, something that I can get behind. Third reason, I just wanted something simple. No fancy animations or colors, that wouldn't be me.
+          </p>
+          <p id="newsp3_260506">
+            So basically, this website is built different :)XD:P))
+          </p>
+        </footer>
+      </article>
+    </div>
+
+    <div id="contact" class="tabcontent">
+      <h2 id="contactinfo">Contact info</h2>
+      <span class="inforow">
+        <h4 id="mailinfo">Mail: </h4><a href="mailto:david.norell98@gmail.com">david.norell98@gmail.com</a>
+      </span>
+      <span class="inforow">
+        <h4>LinkedIn: </h4><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/david-norell/">linkedin.com/in/david-norell</a>
+      </span>
+      <span class="inforow">
+        <h4>Github: </h4><a target="_blank" rel="noopener noreferrer" href="https://github.com/DavidNorell">github.com/DavidNorell</a>
+      </span>
+    </div>
 	</body>
+
+  <script type="module" src="app.js"></script>
 </html>

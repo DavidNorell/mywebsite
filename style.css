@@ -1,0 +1,117 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablink {
+  font-size: 20px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  color: black;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tablink.active {
+  background-color: #ccc;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
+}
+
+.chosen-language {
+  float: none;
+  padding: 20px 20px;
+  display: block;
+  width: 32px;
+  height: tablink.height;
+}
+
+/* Add a grey background color to navbar links on hover */
+.tablink:hover, .dropdown:hover .chosen-language {
+  background-color: #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.language-menu {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Links inside the dropdown */
+.selectable-language {
+  float: none;
+  display: flex;
+  padding: 20px 20px;
+  width: 32px;
+  height: 22px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.selectable-language:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .language-menu {
+  display: block;
+}
+
+.articlepost {
+  display: block;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  width: 100%;
+}
+
+.articleheader {
+  padding-left: 12px;
+}
+
+.articleheader h4 {
+  font-style: italic;
+}
+
+.articlefooter {
+  border-top: 1px solid;
+  border-color: inherit;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.inforow {
+  display: block;
+}
+
+.inforow h4 {
+  display: inline;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
